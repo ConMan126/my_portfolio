@@ -1,0 +1,217 @@
+.py-1 {
+  padding: 1rem; }
+
+.container {
+  max-width: 900px;
+  margin: 0 auto; }
+
+.dash {
+  color: yellow; }
+
+.button {
+  font-size: 1.2rem;
+  border: 1px solid yellow;
+  border-radius: 5px;
+  padding: 0.5rem;
+  color: yellow;
+  display: block;
+  background: none; }
+  .button:hover {
+    background: rgba(255, 255, 0, 0.3);
+    color: white;
+    transition: all 0.2s ease-in; }
+
+.nav--hidden {
+  transform: translateY(-100px);
+  transition: transform 500ms ease-in-out; }
+
+.fa-brands {
+  color: white; }
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box; }
+
+body {
+  font-family: 'Chivo Mono', sans-serif;
+  background: #166c6e; }
+
+ul {
+  list-style: none; }
+
+li {
+  text-decoration: none; }
+
+a {
+  text-decoration: none;
+  color: inherit; }
+
+#header-nav {
+  display: flex;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  justify-content: space-between;
+  padding: 1rem 5rem;
+  color: #fff;
+  transition: all 500ms ease-in-out; }
+  #header-nav h1 {
+    font-size: 2rem;
+    border: 1px solid yellow;
+    border-radius: 50%;
+    padding: 5px; }
+  #header-nav ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center; }
+    #header-nav ul li {
+      padding: 0 1rem;
+      font-size: 0.8rem; }
+      #header-nav ul li:hover {
+        color: yellow;
+        transition: color 500ms ease-in; }
+
+#header-home {
+  background: linear-gradient(#1cbcbf, #166c6e);
+  height: 100vh; }
+
+#header-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  margin: 0 auto;
+  padding-top: 300px; }
+  #header-items img {
+    max-width: 300px;
+    border-radius: 50%; }
+
+#header-info h1 {
+  display: inline-block;
+  box-shadow: 2px 2px 2px yellow;
+  font-size: 3rem; }
+
+#header-info p {
+  color: #333; }
+
+#header-line {
+  height: 5px;
+  max-width: 300px;
+  width: 100%;
+  border-bottom: 1px dotted yellow; }
+
+#about-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem;
+  padding: 0.5rem; }
+
+#about-info {
+  text-align: left;
+  box-shadow: 2px 2px 2px #333;
+  grid-column: 1 / span 2; }
+  #about-info h1 {
+    border-bottom: 1px dotted yellow; }
+  #about-info p {
+    padding-top: 5px;
+    color: #333; }
+
+#skills-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem;
+  box-shadow: 2px 2px 2px #333;
+  padding: 0.5rem;
+  margin: 10rem auto; }
+
+#skills-info {
+  text-align: left; }
+  #skills-info h1 {
+    border-bottom: 1px dotted yellow; }
+  #skills-info p {
+    padding-top: 5px;
+    color: #333; }
+
+#skills-images {
+  text-align: center; }
+  #skills-images img {
+    max-width: 150px;
+    max-height: 150px;
+    padding: 1rem; }
+
+#projects-main {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: center;
+  align-items: center;
+  grid-gap: 1rem;
+  box-shadow: 2px 2px 2px #333;
+  padding: 0.5rem;
+  margin: 10rem auto; }
+
+#projects-info {
+  text-align: left; }
+  #projects-info h1 {
+    border-bottom: 1px dotted yellow; }
+  #projects-info p {
+    padding-top: 5px;
+    color: #333; }
+
+#projects-images {
+  text-align: center; }
+  #projects-images img {
+    max-width: 150px;
+    max-height: 150px;
+    padding: 1rem; }
+
+#contact-main {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  grid-gap: 1rem;
+  margin: 10rem auto 0 auto; }
+
+#contact-info {
+  text-align: center; }
+  #contact-info p {
+    padding-top: 5px;
+    color: #333; }
+
+#contact-form .text-fields {
+  display: grid;
+  grid-template-areas: 'name email' 'subject phone' 'message message';
+  grid-gap: 1rem; }
+  #contact-form .text-fields .name-input {
+    grid-area: name; }
+  #contact-form .text-fields .email-input {
+    grid-area: email; }
+  #contact-form .text-fields .subject-input {
+    grid-area: subject; }
+  #contact-form .text-fields .phone-input {
+    grid-area: phone; }
+  #contact-form .text-fields .message-input {
+    grid-area: message;
+    height: 100px; }
+  #contact-form .text-fields input:focus {
+    outline-color: yellow; }
+  #contact-form .text-fields .text-input {
+    padding: 0.5rem 1rem; }
+
+#contact-button button {
+  display: inline-block;
+  margin: 1rem 0;
+  width: 50%; }
+
+#contact-me {
+  display: flex;
+  justify-content: space-around;
+  margin: 1rem 0; }

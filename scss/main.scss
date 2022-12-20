@@ -1,0 +1,285 @@
+@import 'variables';
+@import 'utilities';
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Chivo Mono', sans-serif;
+    background: $gradient2;
+}
+
+ul {
+    list-style: none;
+}
+
+li {
+    text-decoration: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#header {
+
+    &-nav {
+        display: flex;
+        position: fixed;
+        width: 100%;
+        top: 0;
+        justify-content: space-between;
+        padding: 1rem 5rem;
+        color: #fff;
+        transition: all 500ms ease-in-out;
+        
+        h1 {
+            font-size: 2rem;
+            border: 1px solid $main-color;
+            border-radius: 50%;
+            padding: 5px;
+        }
+        
+        ul {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            
+            li {
+                padding: 0 1rem;
+                font-size: 0.8rem;
+
+                &:hover {
+                    color: $main-color;
+                    transition: color 500ms ease-in;
+                }
+            }
+        }
+    }
+
+    &-home {
+        background: linear-gradient($gradient1, $gradient2);
+        height: 100vh;
+    }
+        
+    
+    &-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: right;
+        margin: 0 auto;
+        padding-top: 300px;
+        
+        img {
+            max-width: 300px;
+            border-radius: 50%;
+        }
+
+    }
+    
+    &-info {
+
+        h1 {
+            display: inline-block;
+            box-shadow: 2px 2px 2px $main-color;
+            font-size: 3rem;
+        }
+
+        p {
+            color: $light-color;
+        }
+    }
+
+    &-line {
+        height: 5px;
+        max-width: 300px;
+        width: 100%;
+        border-bottom: 1px dotted $main-color;
+    }
+}
+
+// About Section 
+
+#about {
+    &-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1rem;
+        padding: 0.5rem;
+    }
+
+    &-info {
+        text-align: left;
+        box-shadow: 2px 2px 2px $light-color;
+        grid-column: 1 / span 2;
+
+        h1 {
+            border-bottom: 1px dotted $main-color;
+        }
+
+        p {
+            padding-top: 5px;
+            color: $light-color;
+        }
+    }
+}
+
+// Skills Section 
+
+#skills {
+    &-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1rem;
+        box-shadow: 2px 2px 2px $light-color;
+        padding: 0.5rem;
+        margin: 10rem auto;
+    }
+
+    &-info {
+        text-align: left;
+
+        h1 {
+            border-bottom: 1px dotted $main-color;
+        }
+
+        p {
+            padding-top: 5px;
+            color: $light-color;
+        }
+    }
+
+    &-images {
+        text-align: center;
+
+        img {
+            max-width: 150px;
+            max-height: 150px;
+            padding: 1rem;
+        }
+    }
+}
+
+// Projects Section 
+
+#projects {
+    &-main {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        justify-content: center;
+        align-items: center;
+        grid-gap: 1rem;
+        box-shadow: 2px 2px 2px $light-color;
+        padding: 0.5rem;
+        margin: 10rem auto;
+    }
+
+    &-info {
+        text-align: left;
+
+        h1 {
+            border-bottom: 1px dotted $main-color;
+        }
+
+        p {
+            padding-top: 5px;
+            color: $light-color;
+        }
+    }
+
+    &-images {
+        text-align: center;
+
+        img {
+            max-width: 150px;
+            max-height: 150px;
+            padding: 1rem;
+        }
+    }
+}
+
+// Contact Section 
+
+#contact {
+    &-main {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        grid-gap: 1rem;
+        margin: 10rem auto 0 auto;
+
+    }
+
+    &-info {
+        text-align: center;
+
+        p {
+            padding-top: 5px;
+            color: $light-color;
+        }
+    }
+
+    &-form {
+        .text-fields {
+            display: grid;
+            grid-template-areas: 
+            'name email'
+            'subject phone'
+            'message message';
+            grid-gap: 1rem;
+
+            .name-input {
+                grid-area: name;
+            }
+            .email-input {
+                grid-area: email;
+            }
+            .subject-input {
+                grid-area: subject;
+            }
+            .phone-input {
+                grid-area: phone;
+            }
+            .message-input {
+                grid-area: message;
+                height: 100px;
+            }
+            input:focus {
+               outline-color: $main-color;
+            }
+
+            .text-input {
+                padding: 0.5rem 1rem;
+            }
+        }
+
+    }
+
+    &-button {
+
+        button {
+            display: inline-block;
+            margin: 1rem 0;
+            width: 50%;
+        }
+    }
+
+    &-me {
+        display: flex;
+        justify-content: space-around;
+        margin: 1rem 0;
+    }
+}

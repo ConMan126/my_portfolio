@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="/dist/css/main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Rubik+Gemstones&display=swap" rel="stylesheet">
+    <title>My Portfolio</title>
+</head>
+<body>
+    <nav id="header-nav">
+        <a href="#header-home"><h1>CH</h1></a>
+        <ul>
+            <a href="#about-main"><li><span class="dash">-</span> About</li></a>
+            <a href="#skills-main"><li><span class="dash">-</span> My Skills and Courses</li></a>
+            <a href="#projects-main"><li><span class="dash">-</span> My Projects</li></a>
+            <a href="#contact-main"><li><span class="dash">-</span> Contact</li></a>
+            <a href="/dist/Connor Hughes - Resume.pdf" target="_blank" class="button"><li>Resume</li></a>
+        </ul>
+    </nav>
+    <header id="header-home">
+        <!-- Main Nav -->
+
+        <!-- Header Info -->
+        <div id="header-items">
+            <div id="header-info">
+                <p class="py-1">My name is</p>
+                <h1 class="py-1">Connor Hughes</h1>
+                <p class="py-1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione, omnis.</p>
+            </div>
+            <div id="header-line"></div>
+            <img src="/dist/images/CMTA-Headshot-9.jpg" alt="">
+        </div>
+    </header>
+
+    <!-- About Me Section -->
+    <section id="about-main" class="container">
+        <div id="about-info">
+            <h1 id="about-header"><span class="dash">-</span> About Me</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, a iste quidem sunt inventore culpa impedit deleniti quos, laborum, animi similique voluptate dolorum earum temporibus neque tenetur beatae omnis illum ex itaque nam! Fuga accusantium eveniet, accusamus officia officiis odio? Molestiae excepturi earum veniam sapiente vitae aliquam similique doloribus ipsum!</p>
+        </div>
+    </section>
+
+    <!-- My Skills and Courses -->
+    <section id="skills-main" class="container">
+        <div id="skills-info">
+            <h1 id="about-header"><span class="dash">-</span> My Skills and Courses</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, a iste quidem sunt inventore culpa impedit deleniti quos, laborum, animi similique voluptate dolorum earum temporibus neque tenetur beatae omnis illum ex itaque nam! Fuga accusantium eveniet, accusamus officia officiis odio? Molestiae excepturi earum veniam sapiente vitae aliquam similique doloribus ipsum!</p>
+        </div>
+        <div id="skills-images">
+            <img src="/dist/images/html.png" alt="">
+            <img src="/dist/images/css.png" alt="">
+            <img src="/dist/images/javascript.png" alt="">
+        </div>
+    </section>
+
+    <!-- My Projects -->
+    <section id="projects-main" class="container">
+        <div id="projects-info">
+            <h1 id="about-header"><span class="dash">-</span> My Projects</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, a iste quidem sunt inventore culpa impedit deleniti quos, laborum, animi similique voluptate dolorum earum temporibus neque tenetur beatae omnis illum ex itaque nam! Fuga accusantium eveniet, accusamus officia officiis odio? Molestiae excepturi earum veniam sapiente vitae aliquam similique doloribus ipsum!</p>
+        </div>
+        <div id="projects-images">
+            <img src="/dist/images/html.png" alt="">
+            <img src="/dist/images/css.png" alt="">
+            <img src="/dist/images/javascript.png" alt="">
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact-main" class="container">
+        <div id="contact-info">
+            <h1 id="about-header"><span class="dash">-</span> Get in Touch!</h1>
+            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Vel, a iste quidem sunt inventore culpa impedit deleniti quos, laborum, animi similique voluptate dolorum earum temporibus neque tenetur beatae omnis illum ex itaque nam! Fuga accusantium eveniet, accusamus officia officiis odio? Molestiae excepturi earum veniam sapiente vitae aliquam similique doloribus ipsum!</p>
+        </div>
+        <form method="POST" data-netlify="true" id="contact-form" data-netlify-recaptcha="true" action="">
+            <div class="text-fields">
+                <input type="text" class="text-input name-input" placeholder="Name" name="name">
+                <input type="email" class="text-input email-input" placeholder="Email Address" name="email">
+                <input type="text" class="text-input subject-input" placeholder="Subject" name="subject">
+                <input type="text" class="text-input phone-input" placeholder="Phone Number" name="phone">
+                <textarea class="text-input message-input" placeholder="Enter Message" name="message"></textarea>
+                <div data-netlify-recaptcha="true"></div>
+            </div>
+            <div id="contact-button">
+                <button type="submit" class="button">Contact Me</button>
+            </div>
+            <div id="icons">
+                <a href="https://www.linkedin.com/in/connor-hughes-266145114/" target="_blank"><i class="fa-brands fa fa-2x fa-linkedin"></i></a>
+            </div>
+        </form>
+
+        <div id="contact-me">
+            <div>
+                <i class="fas fa-envelope fa-2x"></i>
+                <h3>Email</h3>
+                <p>conhughes126@gmail.com</p>
+            </div>
+            <div>
+                <i class="fas fa-phone fa-2x"></i>
+                <h3>Phone</h3>
+                <p>859-912-3369@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <script src="/dist/js/smooth-scroll.js"></script>
+    <script src="/dist/js/navbar-scroll.js"></script>
+</body>
+</html>
