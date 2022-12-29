@@ -1,0 +1,157 @@
+// Tablets and Smaller
+@media (max-width: 900px) {
+    #header {
+
+        &-items {
+            display: flex;
+            flex-direction: column;
+            padding-top: 300px;
+            
+            img {
+                max-width: 300px;
+                border-radius: 50%;
+            }
+        }
+
+        &-line {
+            display: none;
+        }
+    }
+
+    .dash {
+        display: none;
+    }
+}
+
+// SmartPhones 
+body {
+    font-size: 0.8rem;
+}
+
+
+@media (max-width: 768px) {
+    #header {
+        &-nav {
+            
+            .hamburger {
+                display: block;
+            }
+
+            .hamburger.active .bar:nth-child(2) {
+                opacity: 0;
+            }
+            .hamburger.active .bar:nth-child(1) {
+                transform: translateY(8px) rotate(45deg);
+            }
+            .hamburger.active .bar:nth-child(3) {
+                transform: translateY(-8px) rotate(-45deg);
+            }
+
+            .nav-menu {
+                position: fixed;
+                left: -100%;
+                top: 70px;
+                gap: 0;
+                flex-direction: column;
+                background-color: $light-color;
+                width: 100%;
+                text-align: center;
+                transition: 0.3s;
+
+                li {
+                    padding: 3px;
+                }
+            }
+
+            .nav-menu.active {
+                left: 0;
+            }
+        }
+
+        &-info {
+            text-align: center;
+
+            h1 {
+                font-size: 2rem;
+                
+            }
+        }
+
+        &-items {
+            padding-top: 50%;
+        }
+    }
+
+    // about section
+    #about {
+        &-main {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        &-info {
+            box-shadow: none;
+
+            h1 {
+                text-align: center;
+            }
+        }
+    }
+
+    #skills {
+        &-main {
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            justify-content: center;
+            grid-gap: 1rem;
+            box-shadow: none;
+            padding: 0.5rem;
+            margin: 10rem auto;
+        }
+
+        &-info {
+            text-align: center;
+        }
+
+        &-images {
+            flex-direction: row;
+        }
+
+        &-list {
+            ul {
+               list-style-position: inside; 
+            }
+        }
+    }
+
+    #projects {
+        &-main {
+            box-shadow: none;
+
+            h1 {
+                text-align: center;
+            }
+        }
+
+        &-info {
+            text-align: center;
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+            padding-top: 1rem;
+        }
+
+        &-images {
+            margin-top: 1rem;
+        }
+    }
+
+    #contact {
+        &-form {
+            
+            
+            .text-fields {
+                grid-gap: 0.5rem;
+            }
+        }
+    }
+}

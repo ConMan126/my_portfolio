@@ -1,6 +1,7 @@
 @import 'variables';
 @import 'utilities';
 
+
 * {
     padding: 0;
     margin: 0;
@@ -32,6 +33,20 @@ a {
         padding: 1rem 5rem;
         color: #fff;
         transition: all 500ms ease-in-out;
+
+        .hamburger {
+            display: none;
+            cursor: pointer;
+        }
+        
+        .bar {
+                display: block;
+                width: 25px;
+                height: 3px;
+                margin: 5px auto;
+                transition: all 0.3s ease-in-out;
+                background-color: #fff;
+        }
         
         h1 {
             font-size: 2rem;
@@ -50,7 +65,7 @@ a {
             
             li {
                 padding: 0 1rem;
-                font-size: 0.8rem;
+                font-size: 1rem;
 
                 &:hover {
                     color: $main-color;
@@ -217,10 +232,6 @@ a {
 
 #projects {
     &-main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        grid-gap: 1rem;
         box-shadow: 2px 2px 2px $light-color;
         padding: 0.5rem;
         margin: 10rem auto;
@@ -233,6 +244,9 @@ a {
 
     &-info {
         text-align: left;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        padding-top: 1rem;
 
 
         p {
@@ -338,3 +352,6 @@ a {
         margin: 1rem 0;
     }
 }
+
+// Media Queries
+@import 'media';

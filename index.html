@@ -12,13 +12,18 @@
 <body>
     <nav id="header-nav">
         <a href="#header-home"><h1>CH</h1></a>
-        <ul>
+        <ul class="nav-menu">
             <a href="#about-main"><li><span class="dash">-</span> About</li></a>
             <a href="#skills-main"><li><span class="dash">-</span> My Skills and Courses</li></a>
             <a href="#projects-main"><li><span class="dash">-</span> My Projects</li></a>
             <a href="#contact-main"><li><span class="dash">-</span> Contact</li></a>
             <a href="/dist/Connor Hughes - Resume.pdf" target="_blank" class="button"><li>Resume</li></a>
         </ul>
+        <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+        </div>
     </nav>
     <header id="header-home">
         <!-- Main Nav -->
@@ -82,18 +87,22 @@
     <section id="projects-main" class="container">
         <h1 id="about-header"><span class="dash">-</span> My Projects</h1>
         <div id="projects-info">
-            <h2>HVAC Design Tools</h2>
-            <p>An all-in-one website for HVAC design enginners that I created based on what I thought was useful information based on my experience as a HVAC design engineer</p>
-        </div>
-        <div id="projects-images">
-            <a href="https://hvacdesigntools.net/" target="_blank"><img src="/dist/images/hvac-website.png" alt=""></a>
+            <div>
+                <h2>HVAC Design Tools</h2>
+                <p>An all-in-one website for HVAC design enginners that I created, based on what I thought was useful information as an expierenced HVAC design engineer.</p>
+            </div>
+            <div id="projects-images">
+                <a href="https://hvacdesigntools.net/" target="_blank"><img src="/dist/images/hvac-website.png" alt=""></a>
+            </div>
         </div>
         <div id="projects-info">
-            <h2>Our Travel Timeline</h2>
-            <p>This is a personal project where I plan on documenting my Wife and I's travel history with information about each trip and a gallery of pictures!</p>
-        </div>
-        <div id="projects-images">
-            <a href="https://connorstraveltimeline.com/" target="_blank"><img src="/dist/images/travel-timeline.png" alt=""></a>
+            <div>
+                <h2>Our Travel Timeline</h2>
+                <p>This is a personal project where I plan on documenting my Wife and I's travel history with information about each trip and a gallery of pictures!</p>
+            </div>
+            <div id="projects-images">
+                <a href="https://connorstraveltimeline.com/" target="_blank"><img src="/dist/images/travel-timeline.png" alt=""></a>
+            </div>
         </div>
     </section>
 
@@ -128,12 +137,13 @@
             <div>
                 <i class="fas fa-phone fa-2x"></i>
                 <h3>Phone</h3>
-                <p>859-912-3369@gmail.com</p>
+                <p>859-912-3369</p>
             </div>
         </div>
     </section>
 
     <script src="/dist/js/smooth-scroll.js"></script>
     <script src="/dist/js/navbar-scroll.js"></script>
+    <script src="/dist/js/hamburger.js"></script>
 </body>
 </html>
