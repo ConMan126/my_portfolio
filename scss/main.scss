@@ -12,10 +12,6 @@ body {
     background: $gradient2;
 }
 
-ul {
-    list-style: none;
-}
-
 li {
     text-decoration: none;
 }
@@ -50,6 +46,7 @@ a {
             justify-content: center;
             align-items: center;
             text-align: center;
+            list-style: none;
             
             li {
                 padding: 0 1rem;
@@ -94,6 +91,7 @@ a {
 
         p {
             color: $light-color;
+            max-width: 600px;
         }
     }
 
@@ -130,7 +128,32 @@ a {
             padding-top: 5px;
             color: $light-color;
         }
+
+        .about-link {
+            color: #fff;
+            position: relative;
+
+
+            &::after {
+                content: '';
+                width: 0%;
+                height: 2px;
+                background-color: #fff;
+                position: absolute;
+                bottom: 0%;
+                left: 50%;
+                border-radius: 10px;
+                transition: all 500ms ease;
+            }
+
+            &:hover::after {
+                left: 0%;
+                width: 100%;
+            }
+        }
     }
+
+    
 }
 
 // Skills Section 
@@ -140,7 +163,6 @@ a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        align-items: center;
         grid-gap: 1rem;
         box-shadow: 2px 2px 2px $light-color;
         padding: 0.5rem;
@@ -160,8 +182,27 @@ a {
         }
     }
 
+    &-list {
+        display: flex;
+        gap: 2rem;
+        color: $light-color;
+        padding: 1rem 0 0 1rem;
+
+        ul {
+            list-style: square;
+            text-align: left;
+
+            li {
+                padding-top: 3px;
+            }
+        }
+    }
+
     &-images {
         text-align: center;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
 
         img {
             max-width: 150px;
@@ -178,23 +219,29 @@ a {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         justify-content: center;
-        align-items: center;
         grid-gap: 1rem;
         box-shadow: 2px 2px 2px $light-color;
         padding: 0.5rem;
         margin: 10rem auto;
+
+        h1 {
+            border-bottom: 1px dotted $main-color;
+            grid-column: 1 / span 2;
+        }
     }
 
     &-info {
         text-align: left;
 
-        h1 {
-            border-bottom: 1px dotted $main-color;
-        }
 
         p {
             padding-top: 5px;
             color: $light-color;
+        }
+
+        h2 {
+            font-size: 1rem;
+            padding-top: 1rem;
         }
     }
 
@@ -202,9 +249,15 @@ a {
         text-align: center;
 
         img {
-            max-width: 150px;
-            max-height: 150px;
-            padding: 1rem;
+            max-width: 300px;
+            max-height: 300px;
+            padding: 5px;
+            border: 1px solid #fff;
+
+            &:hover {
+                scale: 1.1;
+                transition: all 500ms ease;
+            }
         }
     }
 }
@@ -255,7 +308,8 @@ a {
             }
             .message-input {
                 grid-area: message;
-                height: 100px;
+                max-height: 100px;
+                max-width: 900px;
             }
             input:focus {
                outline-color: $main-color;

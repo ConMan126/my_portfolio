@@ -37,9 +37,6 @@ body {
   font-family: 'Chivo Mono', sans-serif;
   background: #166c6e; }
 
-ul {
-  list-style: none; }
-
 li {
   text-decoration: none; }
 
@@ -66,7 +63,8 @@ a {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    text-align: center; }
+    text-align: center;
+    list-style: none; }
     #header-nav ul li {
       padding: 0 1rem;
       font-size: 0.8rem; }
@@ -95,7 +93,8 @@ a {
   font-size: 3rem; }
 
 #header-info p {
-  color: #333; }
+  color: #333;
+  max-width: 600px; }
 
 #header-line {
   height: 5px;
@@ -120,12 +119,27 @@ a {
   #about-info p {
     padding-top: 5px;
     color: #333; }
+  #about-info .about-link {
+    color: #fff;
+    position: relative; }
+    #about-info .about-link::after {
+      content: '';
+      width: 0%;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      bottom: 0%;
+      left: 50%;
+      border-radius: 10px;
+      transition: all 500ms ease; }
+    #about-info .about-link:hover::after {
+      left: 0%;
+      width: 100%; }
 
 #skills-main {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  align-items: center;
   grid-gap: 1rem;
   box-shadow: 2px 2px 2px #333;
   padding: 0.5rem;
@@ -139,8 +153,22 @@ a {
     padding-top: 5px;
     color: #333; }
 
+#skills-list {
+  display: flex;
+  gap: 2rem;
+  color: #333;
+  padding: 1rem 0 0 1rem; }
+  #skills-list ul {
+    list-style: square;
+    text-align: left; }
+    #skills-list ul li {
+      padding-top: 3px; }
+
 #skills-images {
-  text-align: center; }
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
   #skills-images img {
     max-width: 150px;
     max-height: 150px;
@@ -150,26 +178,33 @@ a {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   justify-content: center;
-  align-items: center;
   grid-gap: 1rem;
   box-shadow: 2px 2px 2px #333;
   padding: 0.5rem;
   margin: 10rem auto; }
+  #projects-main h1 {
+    border-bottom: 1px dotted yellow;
+    grid-column: 1 / span 2; }
 
 #projects-info {
   text-align: left; }
-  #projects-info h1 {
-    border-bottom: 1px dotted yellow; }
   #projects-info p {
     padding-top: 5px;
     color: #333; }
+  #projects-info h2 {
+    font-size: 1rem;
+    padding-top: 1rem; }
 
 #projects-images {
   text-align: center; }
   #projects-images img {
-    max-width: 150px;
-    max-height: 150px;
-    padding: 1rem; }
+    max-width: 300px;
+    max-height: 300px;
+    padding: 5px;
+    border: 1px solid #fff; }
+    #projects-images img:hover {
+      scale: 1.1;
+      transition: all 500ms ease; }
 
 #contact-main {
   display: grid;
@@ -200,7 +235,8 @@ a {
     grid-area: phone; }
   #contact-form .text-fields .message-input {
     grid-area: message;
-    height: 100px; }
+    max-height: 100px;
+    max-width: 900px; }
   #contact-form .text-fields input:focus {
     outline-color: yellow; }
   #contact-form .text-fields .text-input {
