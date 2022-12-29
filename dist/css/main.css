@@ -262,6 +262,12 @@ a {
   justify-content: space-around;
   margin: 1rem 0; }
 
+@media (max-height: 600px) {
+  #header-items {
+    height: 50px; }
+    #header-items img {
+      display: none; } }
+
 @media (max-width: 900px) {
   #header-items {
     display: flex;
@@ -342,3 +348,15 @@ body {
   #contact-form .text-fields {
     grid-template-areas: 'name' 'email' 'subject' 'phone' 'message';
     padding: 0 1rem; } }
+
+@media (max-height: 375px) {
+  #header-items {
+    padding-top: 200px; }
+    #header-items img {
+      display: none; } }
+
+@media (max-width: 375px) {
+  #header-items {
+    padding-top: 200px; }
+    #header-items img {
+      display: none; } }

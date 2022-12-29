@@ -1,4 +1,14 @@
 // Tablets and Smaller
+@media (max-height: 600px) {
+    #header {
+        &-items {
+            height: 50px;
+            img {
+                display: none;
+            }
+        }
+    }
+}
 @media (max-width: 900px) {
     #header {
 
@@ -157,6 +167,32 @@ body {
                 'phone'
                 'message';
                 padding: 0 1rem;
+            }
+        }
+    }
+}
+
+@media (max-height: 375px) {
+    #header {
+
+        &-items {
+            padding-top: 200px;
+            
+            img {
+                display: none;
+            }
+        }
+    }
+}
+
+@media (max-width: 375px) {
+    #header {
+
+        &-items {
+            padding-top: 200px;
+            
+            img {
+                display: none;
             }
         }
     }
