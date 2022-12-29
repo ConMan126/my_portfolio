@@ -90,7 +90,7 @@ a {
         }
 
         p {
-            color: $light-color;
+            color: #fff;
             max-width: 600px;
         }
     }
@@ -126,11 +126,11 @@ a {
 
         p {
             padding-top: 5px;
-            color: $light-color;
+            color: #fff;
         }
 
         .about-link {
-            color: #fff;
+            color: $light-color;
             position: relative;
 
 
@@ -138,7 +138,7 @@ a {
                 content: '';
                 width: 0%;
                 height: 2px;
-                background-color: #fff;
+                background-color: $light-color;
                 position: absolute;
                 bottom: 0%;
                 left: 50%;
@@ -178,7 +178,7 @@ a {
 
         p {
             padding-top: 5px;
-            color: $light-color;
+            color: #fff;
         }
     }
 
@@ -194,6 +194,7 @@ a {
 
             li {
                 padding-top: 3px;
+                color: #fff;
             }
         }
     }
@@ -236,7 +237,7 @@ a {
 
         p {
             padding-top: 5px;
-            color: $light-color;
+            color: #fff;
         }
 
         h2 {
