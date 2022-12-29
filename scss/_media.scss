@@ -150,7 +150,13 @@ body {
             
             
             .text-fields {
-                grid-gap: 0.5rem;
+                grid-template-areas: 
+                'name'
+                'email'
+                'subject'
+                'phone'
+                'message';
+                padding: 0 1rem;
             }
         }
     }

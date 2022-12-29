@@ -340,4 +340,5 @@ body {
   #projects-images {
     margin-top: 1rem; }
   #contact-form .text-fields {
-    grid-gap: 0.5rem; } }
+    grid-template-areas: 'name' 'email' 'subject' 'phone' 'message';
+    padding: 0 1rem; } }
