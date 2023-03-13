@@ -175,17 +175,27 @@ a {
 
 #skills {
     &-main {
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        justify-content: center;
-        grid-gap: 1rem;
+        
         box-shadow: 2px 2px 2px $light-color;
         padding: 0.5rem;
         margin: 10rem auto;
+
+        h1 {
+            border-bottom: dotted $main-color 1px;
+        }
+    }
+
+    &-layout {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
     }
 
     &-info {
         text-align: left;
+        display: grid;
+        grid-template-rows: repeat(2, 1fr);
+        justify-content: center;
+        grid-gap: 1rem;
 
         h1 {
             border-bottom: 1px dotted $main-color;
@@ -194,6 +204,10 @@ a {
         p {
             padding-top: 5px;
             color: #fff;
+        }
+
+        h4 {
+            border-bottom: 1px solid black;
         }
     }
 
@@ -216,8 +230,9 @@ a {
 
     &-images {
         text-align: center;
-        display: flex;
-        flex-direction: column;
+        display: grid;
+        grid-template-rows: repeat(3, 1fr);
+        justify-items: center;
         align-items: center;
 
         img {
