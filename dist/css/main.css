@@ -240,6 +240,12 @@ a {
     padding-top: 5px;
     color: #333; }
 
+#contact-icons .fa-github:hover {
+  color: #c9510c; }
+
+#contact-icons .fa-linkedin:hover {
+  color: #0072b1; }
+
 #contact-form .text-fields {
   display: grid;
   grid-template-areas: 'name email' 'subject phone' 'message message';

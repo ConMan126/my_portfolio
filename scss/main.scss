@@ -314,6 +314,15 @@ a {
         }
     }
 
+    &-icons {
+        .fa-github:hover {
+            color: #c9510c;
+        }
+        .fa-linkedin:hover {
+            color: #0072b1;
+        }
+    }
+
     &-form {
         .text-fields {
             display: grid;
