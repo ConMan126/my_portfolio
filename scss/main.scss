@@ -208,6 +208,9 @@ a {
         h4 {
             border-bottom: 1px solid black;
         }
+        #course-1, #course-2 {
+            align-self: center;
+        }
     }
 
     &-list {
@@ -230,7 +233,7 @@ a {
     &-images {
         text-align: center;
         display: grid;
-        grid-template-rows: repeat(3, 1fr);
+        grid-template-rows: repeat(4, 1fr);
         justify-items: center;
         align-items: center;
 
@@ -280,7 +283,7 @@ a {
         img {
             max-width: 300px;
             max-height: 300px;
-            padding: 5px;
+            padding: 10px;
             border: 1px solid #fff;
 
             &:hover {
