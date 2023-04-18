@@ -213,16 +213,19 @@ a {
     padding-top: 5px;
     color: #fff; }
   #projects-info h2 {
-    font-size: 1rem;
-    padding-top: 1rem; }
+    font-size: 1rem; }
 
 #projects-images {
-  text-align: center; }
+  text-align: center;
+  align-self: center; }
   #projects-images img {
     max-width: 300px;
     max-height: 300px;
     padding: 10px;
-    border: 1px solid #fff; }
+    border: 1px solid #fff;
+    border-radius: 5px;
+    align-items: center;
+    text-align: center; }
     #projects-images img:hover {
       scale: 1.1;
       transition: all 500ms ease; }

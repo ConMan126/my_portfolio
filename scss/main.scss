@@ -273,18 +273,21 @@ a {
 
         h2 {
             font-size: 1rem;
-            padding-top: 1rem;
         }
     }
 
     &-images {
         text-align: center;
-
+        align-self: center;
+        
         img {
             max-width: 300px;
             max-height: 300px;
             padding: 10px;
             border: 1px solid #fff;
+            border-radius: 5px;
+            align-items: center;
+            text-align: center;
 
             &:hover {
                 scale: 1.1;
